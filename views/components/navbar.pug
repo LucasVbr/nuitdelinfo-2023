@@ -1,0 +1,15 @@
+mixin navbar
+  nav.navbar.is-fixed-top
+    .navbar-brand
+      a.navbar-item Nuit de l'info
+      a.navbar-burger(role="button", aria-label="menu", aria-expanded=false)
+        span(aria-hidden=true)
+        span(aria-hidden=true)
+        span(aria-hidden=true)
+
+    .navbar-menu
+      .navbar-end
+        a.navbar-item(href='/') Accueil
+        a.navbar-item(href='/play') Jouer
+        a.navbar-item(href='/more-info') En savoir+
+        a.navbar-item(href='/about-us') A Propos

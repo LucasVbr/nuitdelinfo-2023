@@ -1,0 +1,25 @@
+include components/navbar
+
+html
+  head
+    title Play
+    link(rel='stylesheet', href='/bulma.css')
+    script(src="/socket.io/socket.io.js")
+    script(defer=true, type="module")
+      include scripts/play.js
+  body.is-fullheight.is-flex
+    +navbar
+
+    section#option_0.is-flex.is-justify-content-center.is-align-items-center.p-4(style="cursor: pointer; width:50%; background-color: #88AB8E;")
+      p.is-centered.is-block.is-size-5  Hello
+    section#option_1.is-flex.is-justify-content-center.is-align-items-center.p-4(style="cursor: pointer; width:50%; background-color: #F2F1EB;")
+      p.is-centered.is-block.is-size-5  World
+
+    section.card(style="position: fixed; bottom: 10%; left: 50%;transform: translateX(-50%);")
+      .card-content
+        h1#card_title.title Question
+        p#card_description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quaerat
+          | tempore vitae voluptates. Aperiam corporis excepturi expedita, fugiat
+          | illo magni molestiae molestias mollitia natus neque perferendis quas
+          | qui sed? Numquam?
+        button#next_question.is-hidden.button Prochaine question

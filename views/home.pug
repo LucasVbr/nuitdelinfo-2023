@@ -1,0 +1,24 @@
+include components/navbar
+
+html
+  head
+    title Home
+    link(rel='stylesheet', href='/bulma.css')
+
+  body
+    +navbar
+
+    section.hero.is-fullheight(style='background-image: url(/img/hero.jpg)')
+      .hero-body
+        div
+          p.title.has-text-white
+            | Sauvons la planete,
+            br
+            | distinguons la réalité
+            br
+            | des idées reçues
+          p.subtitle.has-text-white
+            | Défiez les idées reçues sur l'écologie avec notre quiz captivant !
+            br
+            | Testez-vous dès maintenant pour une expérience éducative et amusante.
+          a#playButton.button.is-primary(href="/play") Essayer ce jeu

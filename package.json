@@ -1,0 +1,37 @@
+{
+  "name": "nuitdelinfo-2023",
+  "version": "1.0.0",
+  "description": "Projet de la nuit de l'info 2023",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon . --watch . --ext .js,.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasVbr/nuitdelinfo-2023.git"
+  },
+  "keywords": [
+    "nuitdelinfo",
+    "2023"
+  ],
+  "authors": [
+    "LucasVbr"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasVbr/nuitdelinfo-2023/issues"
+  },
+  "homepage": "https://github.com/LucasVbr/nuitdelinfo-2023#readme",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "pug": "^3.0.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

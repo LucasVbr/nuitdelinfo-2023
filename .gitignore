@@ -1,0 +1,9 @@
+# IDE generated files
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+
+# OS generated files
+DS_Store
